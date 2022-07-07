@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author Yanx
- * @Create 2022-07-07-0:29
+ * @Create 2022-07-08-0:03
  */
 @Data
 @AllArgsConstructor
@@ -15,7 +15,7 @@ public class CommonResult<T> {
     private Integer code;
     private String message;
     private T data;
-    public CommonResult(Integer code,String message){
+    public CommonResult(Integer code, String message){
         this(code,message,null);
     }
 }
