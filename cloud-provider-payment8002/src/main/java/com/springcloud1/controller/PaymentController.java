@@ -1,11 +1,11 @@
-package com.springcloud.controller;
+package com.springcloud1.controller;
 
 import com.springcloud.entities.CommonResult;
 import com.springcloud.entities.Payment;
-import com.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+import com.springcloud1.service.PaymentService;
 
 import javax.annotation.Resource;
 
@@ -18,7 +18,6 @@ import javax.annotation.Resource;
 public class PaymentController {
     @Resource
     private PaymentService paymentService;
-
     @Value("${server.port}")
     private String ServerPort;
 
